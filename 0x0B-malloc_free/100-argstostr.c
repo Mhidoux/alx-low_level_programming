@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * argstostr - concatenates all the arguments of your program
- * @ac: int
- * @av: char
- * Return: char
+ * argstostr - main entry
+ * @ac: int input
+ * @av: double pointer array
+ * Return: 0
  */
 char *argstostr(int ac, char **av)
 {
@@ -32,7 +32,9 @@ char *argstostr(int ac, char **av)
 		r++;
 	}
 	if (str[r] == '\0')
+	{
 		str[r++] = '\n';
 	}
+	}
 	return (str);
-
+}
